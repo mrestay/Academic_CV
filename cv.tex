@@ -1,0 +1,213 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+%%% modified by Karol Kozioł for ShareLaTeX use
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm, 
+bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Mateo Restrepo - Cv},
+	pdfauthor={Mateo Restrepo},
+	pdfproducer={http://nitens.org/taraborelli/cvtex}
+]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+
+% DOCUMENT
+\begin{document}
+{\Huge Mateo Restrepo Ayala}\\[1cm]
+Physics Department Universidad de los Andes\\
+Carrera 1 \#18A-12\\
+%Personal Address: Avenida Carrera 72 \#24B-34\\
+Bogotá - Colombia\\[.2cm]
+Mobile: \texttt{+57 314-257-7884}\\[.2cm]
+Email: \href{mailto:m.restrepo11@uniandes.edu.co}{m.restrepo11@uniandes.edu.co}\\ 
+Github: \url{https://github.com/m-restrepo11}\\
+Nationality:  Colombian\\
+
+
+%%\hrule
+\section*{\textcolor{BrickRed}{Education}}
+\noindent
+\years{2017-2019}\textbf{\textsc{M.Sc.} in Physics}, Universidad de los Andes, Bogotá, Colombia.\\
+{GPA:} 4.45/5\\
+\years{2012-2016}\textbf{\textsc{B.Sc.} in Physics}, Universidad de los Andes, Bogotá, Colombia.\\ 
+GPA: 4.38/5. \textsc{Thesis:} \textit{"Investigation of the Physics of the Sorkin-Johnston state as a distinguished vacuum state for quantum field theory in curved Spacetimes"}\\
+\years{2013-2016}\textbf{\textsc{Minor} in Mathematics}, Universidad de los Andes, Bogotá, Colombia.\\
+{GPA:} 4.40/5
+
+%%\hrule
+\section*{\textcolor{BrickRed}{Current Position}}
+\noindent
+\years{2017-2019}\textbf{\textsc{Graduate research assistant}}, Theoretical physics group at physics department Universidad de los Andes, Bogotá, Colombia. 
+
+%%\hrule
+\section*{\textcolor{BrickRed}{Areas of Interest}}
+  Quantum field theory • Condensed matter \& many-body physics • Machine learning  • Information theory • Complex systems
+  
+\section*{\textcolor{BrickRed}{Publications}}
+\years{2017} A random number generator based on polarized photons. \textit{Emergent Scientist \textbf{Vol 1}- 2.}
+%%\hrule
+
+\section*{\textcolor{BrickRed}{Programming Skills}}
+\textbf{Systems:} Linux, MsWindows.\\  \textbf{Development:} Python, C, C++, Java, Bash.\\
+\textbf{Software:} Mathematica, \LaTeX.\\ \textbf{Tools:} Tensorflow, Pandas, Sckit-learn.
+%%\hrule
+\newpage
+\section*{\textcolor{BrickRed}{Research Experience}}
+%\years{2017} \textsc{Graudate research assistant.}, Physics department - Universidad de los Andes.\\
+%\years{2017} \textsc{Bohmnian mechanics:  A Hydrodynamic Approach to Quantum Mechanics and Bose-Einstein condensate dynamics.} Final work for the advanced quantum mechanics course.\\
+\years{2018} \textbf{\textsc{Summer research internship}}. Under the supervision of Andrés F. Reyes-Lega. \textit{Quanutm Quenches and two-dimensional electrodynamics: Dirac operator spectrum evolution and chiral anomaly.} Universidad de los Andes.\\
+\years{2017} \textbf{\textsc{Summer research internship}}. Under the supervision of Andrés F. Reyes-Lega. \textit{Computation of the entanglement entropy of a causal diamond in 1+1 dimensions with the Sorkin-Johnston state.}, Universidad de los Andes.\\
+\years{2017}\textbf{\textsc{Research project}} \emph{Quantum state tomography of entangled qubit pairs}, Quantum optics group, Universidad de los Andes.\\
+\years{2018} \textbf{\textsc{Research grant}} \emph{Schwinger model: spectrum, dynamics and quantum quenches}, Seed project grant, science faculty, Universidad de los Andes.
+
+
+
+%%\hrule
+\section*{\textcolor{BrickRed}{Languages}}
+Spanish: Native \\ 
+English: Fluent, \textsc{TOEFL iBT:} 108/120 \\
+German: Basic
+
+ 
+\section*{\textcolor{BrickRed}{Teaching \& professional Experience}}
+
+\years{2017-2019} \textbf{\textsc{Graduate teaching assistant:}} Experimental Physics I, Experimental Physics II ,  Physics I - Recitation Section, Physics II - Recitation Section.\\
+\years{2017} \textbf{\textsc{Organizer and lecturer:}} Graduate Student Seminar in quantum field theory .\\
+\years{2013-2015} \textbf{\textsc{Teaching assistant:}} Clinic for Problem-Solving: an undergraduate problem solving lab. Physics Department Universidad de los Andes.\\
+\years{2013-2016}\textbf{\textsc{Undergraduate teaching assistant:}} Honors Differential Calculus, Honors Vector Calculus, Physics I, Physics II, Classical Mechanics, Quantum Mechanics I, Quantum Mechanics II
+
+%\hrule
+\section*{\textcolor{BrickRed}{Grants, honors \& awards}}
+\noindent
+\years{2018} \textbf{\textsc{Seed project grant}} financing research projects and attendance to academic events. Science faculty, Universidad de los Andes.\\
+\years{2017} \textbf{\textsc{Teaching assistantship}} covering tuition fees for M.Sc. studies. Physics department, Universidad de los Andes.\\
+\years{2012} \textbf{\textsc{Alberto Magno grant}} for undergraduate tuition fee. Universidad de los Andes.\\
+\years{2012} Best score in the Colombian national exam for High-school ICFES.
+
+
+%%\hrule
+\section*{\textcolor{BrickRed}{Conferences, Schools \& Workshops}}
+\noindent
+
+\years{2018} \emph{Q-Turn: changing paradigms in quantum science}. UFSC, Florianopolis, Brazil.\\
+\years{2018} \emph{Ninth School of Mathematical Physics:Topological order and beyond}. Universidad de los Andes.\\
+\years{2017} \emph{Workshop on Dynamic of quantum systems out of equilibrium.} Universidad de los Andes.\\
+\years{2017} \emph{Minicourse on machine learning for many-body physics}. ICTP-SAIFR, Sao Paulo, Brazil.\\
+\years{2017} \emph{Tenth Summer School on Geometric, Algebraic and Topological Methods for Quantum Field Theory}. Universidad de los Andes, Villa de Leyva, Colombia.\\
+\years{2016} \emph{Journeys into Theoretical Physics}. IFT-Perimeter-SAIFR, Sao Paulo, Brazil.\\
+\years{2016} \emph{Eight School of Mathematical Physics: Random Geometries}. Universidad de los Andes.\\
+\years{2016} \emph{Member of the first Colombian team at the International Physicist's Tournament}. Société Française de Physique, Paris, France.\\
+\years{2015} \emph{Andean School on Gravity and Cosmology}. Universidad de los Andes.\\
+\years{2015} \emph{Theoretical Physics School on Quantum Field Theory}. Universidad del Norte y Universidad del Atlantico, Barranquilla, Colombia.\\
+\years{2015} \emph{Ninth Summer School on Geometric, Algebraic and Topological Methods for Quantum Field Theory}. Universidad de los Andes, Villa de Leyva, Colombia.\\
+\years{2015} \emph{Workshop on Mathematical Structure and Foundations of Quantum Physics}. Universidad de los Andes.\\
+\years{2015} \emph{International Year of Light}. Universidad Nacional de Colombia \& Universidad de los Andes.\\
+\years{2015} \emph{Seventh School of Mathematical Physics: Topological Quantum Matter From Theory to Applications}. Universidad de los Andes.
+
+
+%%\hrule
+\section*{\textcolor{BrickRed}{Posters, Talks \& Seminars}}
+
+\years{2018} \textbf{\textsc{Poster}} \emph{Lattice Schwinger model: Spectrum, dynamics and quantum quenches} Q-Turn quantum information workshop, UFSC, Florianopolis, Brazil.\\
+\years{2108} \textbf{\textsc{Seminar}} \emph{Schwinger model continuum and discrete formulations} Quantum field theory and mathematical physics seminar at physics department, Universidad de los Andes.\\
+\years{2108} \textbf{\textsc{Seminar}} \emph{Quantum quench dynamics in the Ising model and dynamical phase transitions} Quantum field theory and mathematical physics seminar at physics department, Universidad de los Andes.\\
+\years{2017} \textbf{\textsc{Seminar}} \emph{2 dimensional conformal invariance.} Quantum field theory and mathematical physics seminar at physics department, Universidad de los Andes.\\\textbf{\textsc{Seminar}} \emph{The cosmological constant problem.} Theoretical Physics Seminar at physics department, Universidad de los Andes.\\
+\years{2016}\textbf{\textsc{Talk}} \emph{Beyond the dark Universe? $f(R)$ gravitational alternatives.} Astroparticle physics course talks, Universidad de los Andes.\\
+\years{2016} \textbf{\textsc{Seminar}} \emph{Field theory in curved spacetimes.}Theoretical Physics Seminar at physics department, Universidad de los Andes.\\
+\years{2016} \textbf{\textsc{Seminar}} \emph{The Sorkin-Johnston state and entanglement entropy of bounded spacetime regions.} Quantum Field Theory Seminar at physics department, Universidad de los Andes.\\
+\years{2016} \textbf{\textsc{Seminar}} \emph{Aspects of Field Quantization and the Sorkin-Johnston state for the Klein-Gordon field.} Physics Seminar by Students at physics department, Universidad de los Andes.\\
+\years{2015} \textbf{\textsc{Seminar}}\emph{Stellar Equilibrium in White Dwarf Stars and the Chandrasekhar mass}, Theoretical Physics Seminar at physics department, Universidad de los Andes.\\
+\years{2015} \textbf{\textsc{Seminar}} \emph{General Relativity and Gravitational Waves}, Physics Seminar by Students at physics department, Universidad de los Andes.
+
+
+\noindent
+
+
+
+%%\hrule
+%\section*{Graduate Coursework}
+%\years{2015} \textsc{Spacetime structure.}\\
+%\years{2015} \textsc{Information theory for physicists.}\\
+%\years{2015} \textsc{General relativity and cosmology.}\\
+%\years{2016} \textsc{Quantum filed theory.}\\
+%\years{2016} \textsc{Asymptotic analysis.}\\
+%\years{2016} \textsc{Astroparticle physics and cosmology.}\\
+%\years{2017} \textsc{Advanced quantum mechanics.}\\
+%\years{2017} \textsc{Advanced analytical mechanics.}\\
+%\years{2017} \textsc{Advanced laboratory.}\\
+%\years{2017} \textsc{Group theory in quantum mechanics}
+
+%%\hrule
+%\section*{Undergraduate Work}
+%\years{2014} \textsc{Experimental Verification for the Three Kirchhoff Laws of Electromagnetic Radiation}, Final work for the Intermediate Laboratory course.\\
+%\years{2015} \textsc{Gravitational Radiation: Theoretical Foundations and Detection Methods}, Final work for the Spacetime structure course.\\
+%\years{2015} \textsc{F(R) theories as modifications to General Relativity}, Final work for the general relativity course.\\
+%\years{2015} \textsc{Classical Cryptography}, Final work for the information theory Course.\\
+%\years{2015} \textsc{Bose-Einstein Condensation in ultra-cold atoms}, Final work for the solid state course.\\
+%\years{2016} \textsc{A novel Vacuum State for a massless Scalar Field in globally hyperbolic Spacetimes.} Final work for the quantum field theory course.\\
+
+
+% \section*{\textcolor{BrickRed}{Academic References}}
+ %\textsc{Andres F. Reyes-Lega.} Associate professor physics department, Universidad de los Andes.
+ %\href{mailto:anreyes@uniandes.edu.co}{anreyes@uniandes.edu.co}.\\[1ex]
+%\textsc{Pedro Bargueño}.Associate professor physics department, Universidad de los Andes. \href{mailto:pbargueno@uniandes.edu.co}{pbargueno@uniandes.edu.co}.\\[1ex]
+%\textsc{Carlos Andrés Flórez}. Associate professor physics department, Universidad de los Andes. \href{mailto:ca.florez@uniandes.edu.co}{ca.florez@uniandes.edu.co}.
+
+
+ \end{document}
